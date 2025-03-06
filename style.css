@@ -87,6 +87,15 @@ html, body {
     transition: opacity 1s linear;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .card {
+        width: 90%;
+        padding: 10px;
+    }
+}    
 @keyframes card {
     from {
         opacity: 0;
