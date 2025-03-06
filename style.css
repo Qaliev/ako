@@ -29,20 +29,11 @@ html, body {
 }
 
 .card {
-    max-width: 90%; /* Ограничиваем ширину */
-    width: auto;
-    padding: 20px; /* Уменьшаем внутренние отступы */
-    background: white;
-    border-radius: 15px; /* Закругляем углы */
-    text-align: center;
-    margin: 10px auto; /* Выравниваем по центру */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Делаем тень */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+    width: 95%; /* Растягиваем ширину почти на весь экран */
+        max-width: none; /* Убираем ограничение по ширине */
+        padding: 15px; /* Уменьшаем отступы */
+        border-radius: 10px; /* Делаем углы менее закруглёнными */
+    }
 .title {
     margin-bottom: 10px;
 
