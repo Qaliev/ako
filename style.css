@@ -94,8 +94,9 @@ html, body {
     }
     
     .card {
-        width: 90%; /* Уменьшаем ширину карточки */
-        padding: 10px;
+    max-width: 90%; /* Ограничиваем ширину */
+    word-wrap: break-word; /* Перенос длинных слов */
+    text-align: center; /* Выравниваем текст по центру */
     }
 }
 
