@@ -69,7 +69,10 @@ html, body {
     -webkit-text-fill-color: transparent;
 
     color: #333;
-    font-size: 35px;
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
     line-height: 1.2;
 }
 
@@ -88,15 +91,15 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-color: lightblue; /* Изменяем фон на мобильных */
+    .text {
         font-size: 14px; /* Делаем текст меньше */
+        padding: 5px;
     }
-    
+
     .card {
-    max-width: 90%; /* Ограничиваем ширину */
-    word-wrap: break-word; /* Перенос длинных слов */
-    text-align: center; /* Выравниваем текст по центру */
+        width: 90%;
+        padding: 10px;
+        max-width: 320px; /* Ограничиваем ширину карточки */
     }
 }
 
