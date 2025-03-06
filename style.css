@@ -29,11 +29,25 @@ html, body {
 }
 
 .card {
-    width: 95%; /* Растягиваем ширину почти на весь экран */
-        max-width: none; /* Убираем ограничение по ширине */
-        padding: 15px; /* Уменьшаем отступы */
-        border-radius: 10px; /* Делаем углы менее закруглёнными */
+    display: block; /* Убедимся, что элемент отображается */
+    width: 95%; /* Растягиваем на телефонах */
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        max-width: none;
+        padding: 15px;
     }
+}
+
 .title {
     margin-bottom: 10px;
 
@@ -74,21 +88,6 @@ html, body {
     text-align: right;
 
     transition: opacity 1s linear;
-}
-
-/* Адаптация для телефонов */
-@media (max-width: 768px) {
-    .card {
-        width: 95%; /* Растягиваем ширину почти на весь экран */
-        max-width: none; /* Убираем ограничение по ширине */
-        padding: 15px; /* Уменьшаем отступы */
-        border-radius: 10px; /* Делаем углы менее закруглёнными */
-    }
-
-    .text, .title {
-        font-size: 16px; /* Немного уменьшаем шрифт */
-        line-height: 1.5;
-    }
 }
 
 @keyframes card {
