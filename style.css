@@ -89,13 +89,16 @@ html, body {
 
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        background-color: lightblue; /* Изменяем фон на мобильных */
+        font-size: 14px; /* Делаем текст меньше */
     }
+    
     .card {
-        width: 90%;
+        width: 90%; /* Уменьшаем ширину карточки */
         padding: 10px;
     }
-}    
+}
+
 @keyframes card {
     from {
         opacity: 0;
