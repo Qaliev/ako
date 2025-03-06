@@ -29,23 +29,23 @@ html, body {
 }
 
 .card {
-    display: block; /* Убедимся, что элемент отображается */
-    width: 95%; /* Растягиваем на телефонах */
-    max-width: 500px;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    text-align: center;
-    margin: 50px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+    width: 800px;
+    height: 420px;
+    padding: 15px 30px;
 
-@media (max-width: 768px) {
-    .card {
-        width: 95%;
-        max-width: none;
-        padding: 15px;
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+
+    transform-style: preserve-3d;
+    perspective: 200px;
+    opacity: 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+
+    transform: translate3d(-40%, -50%, 0) rotateY(30deg);
+    animation: card 2s linear 2s forwards;
 }
 
 .title {
@@ -69,10 +69,7 @@ html, body {
     -webkit-text-fill-color: transparent;
 
     color: #333;
-    font-size: 18px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-align: center;
+    font-size: 35px;
     line-height: 1.2;
 }
 
