@@ -85,16 +85,18 @@ html, body {
     transition: opacity 1s linear;
 }
 
+/* Адаптация для телефонов */
 @media (max-width: 768px) {
     .card {
-        width: 90%;
-        max-width: 320px; /* Ограничиваем ширину */
-        padding: 10px; /* Уменьшаем отступы */
+        width: 95%; /* Растягиваем ширину почти на весь экран */
+        max-width: none; /* Убираем ограничение по ширине */
+        padding: 15px; /* Уменьшаем отступы */
+        border-radius: 10px; /* Делаем углы менее закруглёнными */
     }
 
     .text, .title {
-        font-size: 14px; /* Делаем текст меньше */
-        line-height: 1.4; /* Увеличиваем расстояние между строками */
+        font-size: 16px; /* Немного уменьшаем шрифт */
+        line-height: 1.5;
     }
 }
 
